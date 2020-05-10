@@ -49,7 +49,7 @@ nicetable = slurpInFile(filename, nicetable)
 
 # write out the table to a file:
 
-ofile="checklist1.tex"
+ofile="checklist.tex"
 output=open(ofile, 'w')
 output.write(nicetable)
 output.close()

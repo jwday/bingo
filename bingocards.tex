@@ -17,11 +17,11 @@
 
 %PATH TO LIST OF WORDS TO GO IN BINGO SQUARES
 % \newcommand\listofwords{bingolist.tex}
-\newcommand\listofwords{bingolist_jkexitseminar.tex}
+\newcommand\listofwords{bingolist.tex}
 
 %PATH TO IMAGE IN CENTER OF BINGO BOARD
 % \newcommand\centerimage{Images/Donald_Trump_official_portrait.jpg}
-\newcommand\centerimage{Images/jk_sim.png}
+\newcommand\centerimage{Images/Crew_Dragon_Demo-2_Patch.png}
 
 %TEXT TO DISPLAY BELOW BINGO GRID
 % \newcommand\titletext{
@@ -33,11 +33,9 @@
 % }
 
 \newcommand\titletext{
-Bingo
+SpaceX Crew Dragon Demo-2 Bingo
 
-John Karasinski's Exit Seminar
-
-28 April 2020
+27 May 2020
 }
 
 
@@ -135,7 +133,7 @@ John Karasinski's Exit Seminar
 
 % Set image in free space:
 \newcommand{\freespace}{
-	\filldraw[fill=gray!90, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
+	\filldraw[fill=white!90, draw=black] ($(\col,-\row)-(1,1)$) rectangle ($(\col,-\row)$) ;
 	\node (img) [scale=1.0] at ($(\col,-\row)-(0.5,0.5)$) {\includegraphics[width=\Sizeinner]{\centerimage}};
     \node [align=center, color=white] at (img.center){Free Space};
 
@@ -195,7 +193,7 @@ John Karasinski's Exit Seminar
 \input{\listofwords}
 
 % start a for-loop to make each page (its own card)
-\foreach \n in {0,...,49}{
+\foreach \n in {0,...,29}{
 
 % select and randomize the entries:
 	\setItems

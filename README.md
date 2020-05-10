@@ -9,12 +9,17 @@ was taken from [tex.stackexchange.com](http://tex.stackexchange.com/questions/63
 
 ## Basic Usage
 1. Update bingolist.tex with the list of words you want randomly distributed in bingo tiles
-2. Update bingocards.tex path to bingolist.txt, card title, and free space image.
-3. Compile bingocards.tex to get bingo cards
+2. Update bingocards.tex path to bingolist.tex, card title, and free space image.
+3. Compile bingocards.tex to get bingo cards (I use latexmk)
 4. Run ```shell
+	   python split_bingo_cards.py
+       ```
+	   to split bingocards.pdf into single pages, saved to a new subfolder that gets created (requires PyPDF2 package)
+5. Run ```shell
        python makechecklist.py
        ```
        to update master checklist
+6. Compile bingochecklist.tex to get a master checklist .pdf of all the words listed in bingolist.tex
 
 ## Introduction
 
